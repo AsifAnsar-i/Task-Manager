@@ -30,7 +30,7 @@ const Signup = () => {
     });
   };
 
-  console.log(state.email, state.password, state.username);
+
   return (
     <div className="signup-form">
       <div className="signup-form__wrapper">
