@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem auto;
+    width: 90%;
+    padding-top: 20px;
+
+    li {
+        padding: 1rem;
+        flex: 1;
+        font-size: larger;
+
+        button {
+            margin: 5px;
+            padding: 10px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        font-size: x-large;
+    }
+}
+
+.completed {
+    background-color: rgb(126, 243, 126);
+    color: white;
+}
