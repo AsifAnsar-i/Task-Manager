@@ -8,8 +8,8 @@ const Home = () => {
 	return (
 		<div className='home'>
 			<div className='home__container'>
-				<h2>Organize it all</h2>
-				<p>With TaskManager</p>
+				<h2>Organize everything with</h2>
+				<p>TaskManager</p>
 
 				{currentUser && currentUser.token ? (
 					<Link to='/dashboard' className='button'>
