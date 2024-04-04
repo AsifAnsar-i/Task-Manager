@@ -18,8 +18,6 @@ app.use(express.json());
 app.use("/auth", authRoutes);
 app.use("/task", taskRouter);
 
-const __dirname = path.resolve(); // Declaring __dirname only once
-
 app.use(express.static(path.join(__dirname, "/client/dist")));
 
 app.get("*", (req, res) => {
