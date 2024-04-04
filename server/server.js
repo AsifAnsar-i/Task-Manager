@@ -6,8 +6,6 @@ const taskRouter = require("./routes/taskRoutes");
 const morgan = require("morgan");
 const path = require("path");
 
-const __dirname = path.resolve();
-
 const app = express();
 app.use(
   cors({
@@ -19,6 +17,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use("/auth", authRoutes);
 app.use("/task", taskRouter);
+
+const __dirname = path.resolve(); // Declaring __dirname only once
 
 app.use(express.static(path.join(__dirname, "/client/dist")));
 
